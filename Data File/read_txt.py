@@ -1,1 +1,1 @@
-f = open('t.txt'')
+f = open('t.txt')
