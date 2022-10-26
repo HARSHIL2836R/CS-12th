@@ -1,0 +1,12 @@
+f = open('Data File\\a.txt', 'r')
+data = f.read()
+print(data)
+f.close()
+data = data.title()
+f = open('Data File\\a.txt', 'w')
+f.write(data)
+f.close()
+
+f = open('Data File\\a.txt', 'r')
+data = f.read()
+print(data)
