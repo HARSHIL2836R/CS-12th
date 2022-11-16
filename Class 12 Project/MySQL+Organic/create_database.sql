@@ -1,11 +1,17 @@
 drop database if exists Organic_chem;
 create database Organic_chem;
 use Organic_chem;
+/* TEXT is a datatype with a field with maximum length of 65535 characters.
+Sorts and comparisons on stored data are not case sensitive in TEXT fields.
+We do not need to specify a length with TEXT.
+TINYTEXT is Text datatype.
+It is a TEXT column with a maxiumum length of 255 characters.
+We do not need to specify a length with TINYTEXT*/
 create table Reactions (
-    Name varchar(30) NOT NULL,
-    Reactant varchar(50),
-    Reagent varchar(100) PRIMARY KEY,
-    Conditions varchar(20),
-    Product varchar(50),
-    Remarks text
+    Name TINYTEXT NOT NULL,
+    Reactant TINYTEXT,
+    Reagent TINYTEXT NOT NULL,
+    Conditions TINYTEXT,
+    Product TINYTEXT,
+    Remarks TEXT
 );
