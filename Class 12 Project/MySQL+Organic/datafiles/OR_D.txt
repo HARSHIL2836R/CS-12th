@@ -1,0 +1,14 @@
+<REDUCTIONS>
+-----------------------------------------------------------------------------------------------------------------------        
+            | RedP+HI       | LiAlH4        | B2H6 in THF   | Na + EtOH     | NaBH4     | H2/Ni     | DIBAL-H
+-----------------------------------------------------------------------------------------------------------------------
+R-CO-Cl     | R-CH3         | R-CH2-OH      | NO RX         | R-CH2-OH      | R-CH2-OH  | R-CH2-OH  | R-CHO
+R-CO-O-CO-R | 2 R-CH3       | 2 R-CH2-OH    | 2 R-CH2-OH    | 2 R-CH2-OH    | NO RX     | NO RX     |
+R-CO-OR'    | R-CH3 + R'-H  | R-CH2-OH+R'-OH| R-CH2-OH+R'-OH| R-CH2-OH+R'-OH| NO RX     | NO RX     | R-CHO + R'-OH
+R-CO-OH     | R-CH3         | R-CH2-OH      | R-CH2-OH      | NO RX         | NO RX     | NO RX     | 
+R-CO-NH2    | R-CH2-NH2     | R-CH2-NH2     | R-CH2-NH2     | NO RX         | NO RX     | NO RX     |
+R-CO-R'     | R-CH2-R'      | R-CH(OH)-R'   |               |               |R-CH(OH)-R'|           |
+R-CN        | R-NH2         | R-CH2-NH2     |               |               |           | R-CH2-NH2 | R-CHO
+R-X         | R-H + HX      | R-H           |               |               |           |           |
+R-NO2       | R-NH2         | R-NH2         |               |               |           | R-NH2     |
+-----------------------------------------------------------------------------------------------------------------------        

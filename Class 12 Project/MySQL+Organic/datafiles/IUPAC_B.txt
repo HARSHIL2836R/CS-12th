@@ -1,0 +1,4 @@
+Some other Groups:-  
+|-OR Alkoxy                     |= Methylidene                              |-CO-OR Alkoxy Carbonyl
+|-O-CO-R Alkanoyl Oxy           |-CO-NH-R N-Alkyl Amide (or Carboxamido)    |-NH-CO-R Alkanoyl Amino
+|-X Halo                        |-NO->O Nitro                               |-NO Nitroso 

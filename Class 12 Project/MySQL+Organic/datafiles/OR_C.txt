@@ -1,0 +1,19 @@
+<OXIDATIONS>
+-----------------------------------------------------------------------------------------------------------------------        
+            |STRONG                 |MODERATE               |WEAK                   |Cu             |dil. HNO3
+            |KMnO4 + H+/OH-/H2O     |Jone's Reagent         |PCC                    |573K           |
+            |K2Cr2O7 + H+ (heat)    |i.e.(CrO3+acetone+H2O) |PDC                    |(heating)      |
+            |CrO3 + H+ (annhydrous) |                       |Collin's Reagent       |               |
+            |H2CrO4 + H+            |                       |Oppenauer Oxidation    |               |
+-----------------------------------------------------------------------------------------------------------------------        
+R-CH2-OH    |R-CO-OH                |R-CO-OH                |R-CHO                  |R-CHO          |R-CO-OH
+R-CH(OH)-R  |R-CO-R                 |R-CO-R                 |R-CO-R                 |R-CO-R         |NO RX
+R-CR(OH)-R  |NO RX                  |NO RX                  | NO RX                 |DEHYDRATION    |NO RX
+-----------------------------------------------------------------------------------------------------------------------        
+-> MnO2 selectively oxidises allylic and benzylic alcohols into aldehydes and ketones.
+-> HIO4 (Periodic acid) or (CH3COO)4Pb reacts with 
+ | |   |  |          | |
+-C-C- -C--C -C--C-  -C-C-   Break C-C bond and add -OH to both
+ | |   | ||  || ||   | |
+ OHOH  OH O  O  O   NH2OH
+-----------------------------------------------------------------------------------------------------------------------        

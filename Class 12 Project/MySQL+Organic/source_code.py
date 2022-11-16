@@ -1,5 +1,6 @@
 import mysql.connector
-import pickle
+import os 
+dir_path = os.path.dirname(os.path.realpath(__file__))
 cnx = mysql.connector.connect(host='localhost', port='2836', user='root', passwd='root', database = 'Organic_chem')
 cur = cnx.cursor()
 _format_ = ['Name', 'Reactant', 'Reagent', 'Conditions', 'Product', 'Remarks']
@@ -179,30 +180,27 @@ class Ops():
             return
 
     def Naming():
-        f = open('datafiles/IUPAC_A.dat', 'r')
-        try:
-            while True:
-                data = pickle.load(f)
-                print(data)
-        except EOFError:
-            f.close()
+        f = open('{}\\datafiles\\IUPAC_A.txt'.format(dir_path), 'r')
+        data = f.read()
+        print(data)
+        f.close()
         helpers._continue_()
         helpers.page_break()
-        f = open('datafiles/IUPAC_B.dat', 'r')
-        try:
-            while True:
-                data = pickle.load(f)
-                print(data)
-        except EOFError:
-            f.close()
+        f = open('{}\\datafiles\\IUPAC_B.txt'.format(dir_path), 'r')
+        data = f.read()
+        print(data)
         return
     
     def OR():
-        i = int(input("Do you want to get information for Oxidations or Reductions? (1-2):- "))
-        if i == 1:
-            O_an_R.Oxidation._print_it_()
-        elif i == 2:
-            O_an_R.Reduction._print_it_()
+        f = open('{}\\datafiles\\OR_C.txt'.format(dir_path), 'r')
+        data = f.read()
+        print(data)
+        f.close()
+        helpers._continue_()
+        helpers.page_break()
+        f = open('{}\\datafiles\\OR_D.txt'.format(dir_path), 'r')
+        data = f.read()
+        print(data)
         return
 
 class Interface():
