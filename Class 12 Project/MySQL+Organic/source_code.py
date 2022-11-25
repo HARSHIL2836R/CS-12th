@@ -43,7 +43,7 @@ class helpers():
 
     def change_term(term, name):
         term2 = input("Enter new %s for the Reaction:- "%term)
-        cur.execute("update Reactions set %s='%s' where 'Name'='%s';"%(term, term2, name))
+        cur.execute("update Reactions set %s='%s' where Name='%s';"%(term, term2, name))
         cnx.commit()
         print("Reaction successfully updated.")
         return True
@@ -63,6 +63,12 @@ class Ops():
         v4 = str(input("Enter condition(s):- "))
         v5 = str(input("Enter product(s):- "))
         v6 = str(input("Remarks over the reaction (mechanism, explanation, reactivity,...):-   "))
+        for el in [v1,v2,v3,v4,v5,v6]:
+            for char in el:
+                #REMOVE ' or " to prevent error on execution
+                if char == "'" or '"':
+                    n = el.index(char)
+                    el = el[:n] + el[n+1:]
         st = "insert into Reactions values('{}','{}','{}','{}','{}','{}');".format(v1,v2,v3,v4,v5,v6)
         cur.execute(st)
         cnx.commit()
@@ -160,7 +166,7 @@ class Ops():
         print('<DELETING A REACTION>')
         print("First search for the reaction you want to delete: ")
 
-        def sub_del():
+        def sub_del(rx):
             cur.execute("delete from Reactions where {}='{}';".format('Name', rx[0]))
             cnx.commit()
             helpers.page_break()
