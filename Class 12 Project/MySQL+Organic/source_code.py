@@ -1,5 +1,5 @@
 import mysql.connector
-import os 
+import os
 dir_path = os.path.dirname(os.path.realpath(__file__))
 cnx = mysql.connector.connect(host='localhost', port='2836', user='root', passwd='root', database = 'Organic_chem')
 cur = cnx.cursor()
