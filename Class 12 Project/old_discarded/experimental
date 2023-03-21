@@ -1,0 +1,10 @@
+M = []
+for i in range(3):
+    while True:
+        r = input("Enter %sth row of matrix (Elements separated by commas): "%(i+1))
+        if len(r.split(','))!=3:
+            print("Wrong row entered for specified matrix, Try Again.")
+        else:
+            break
+    M.append([int(x) for x in r.split(',') if x.isdigit()])
+print(M)

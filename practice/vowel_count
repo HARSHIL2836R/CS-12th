@@ -1,0 +1,1 @@
+print('Total number of vowels are: ', len([x for x in open('practice\myfile1.txt', 'r').read() if x.lower() in 'aeiou']))
